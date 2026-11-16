@@ -19,3 +19,6 @@ spec:
         image: surajpatil1/ultimate-cicd:101
         ports:
         - containerPort: 8080
+        resources:
+          limits:
+            memory: "20Mi"   # Intentionally starve the JVM to trigger Exit Code 137!
